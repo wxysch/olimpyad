@@ -42,18 +42,18 @@
 
 '''Известны результаты каждой из 4х четвертей баскетбольной встречи. Нужно определить победителя матча. Побеждает команда, набравшая больше очков в течение всего матча.'''
 
-# a,b = map(int,input().split())
-# a1,b1 = map(int,input().split())
-# a2,b2 = map(int,input().split())
-# a3,b3 = map(int,input().split())
-# c = a+a1+a2+a3
-# c1 = b+b1+b2+b3
-# if c > c1:
-#     print('1')
-# elif c1 < c:
-#     print('2')
-# else:
-#     print('DRAW')
+a,b = map(int,input().split())
+a1,b1 = map(int,input().split())
+a2,b2 = map(int,input().split())
+a3,b3 = map(int,input().split())
+c = a+a1+a2+a3
+c1 = b+b1+b2+b3
+if c > c1:
+    print('1')
+elif c1 < c:
+    print('2')
+else:
+    print('DRAW')
 
 '''Белочка собрала в лесу N шишек c орешками. Белочка очень привередливо выбирала шишки, и брала только те, в которых ровно M орешков. 
 Также известно, что для пропитания зимой ей необходимо не менее K орешков. Определите, хватит ли на зиму орешков белочке.'''
@@ -70,3 +70,5 @@
 # n = int(input())
 # print(n+1)
 
+a,b,c=map(int,input().split())
+print(a*b*c*2)
