@@ -92,34 +92,63 @@
 # print(a.count("м"))
 # сап берилген анан  палиндром экенин далилдегиле
 # --------------------------------------------------------------------------------------------
-n = int(input())
-m = (input().split(" "))
-m2 = []
-for i in m:
-    m2.append(int(i))
-max1 = max(m2)
-min1 = min(m2)
-m3 = []
-for i in range(min1, max1 + 2, 2):
-    if i > max1:
-        break
-    else:
-        m3.append(i)
+#n = int(input())
+#m = (input().split(" "))
+#m2 = []
+#for i in m:
+#    m2.append(int(i))
+#max1 = max(m2)
+#min1 = min(m2)
+#m3 = []
+#for i in range(min1, max1 + 2, 2):
+#    if i > max1:
+#        break
+#    else:
+#        m3.append(i)
 
-h = []
-for i in m2:
-    if i != min1:
-        h.append(i)
-    min1 += 2
-set1 = set(m3)
-set2 = set(m2)
-list3 = list(set1.difference(set2))
+#h = []
+#for i in m2:
+#    if i != min1:
+#        h.append(i)
+#    min1 += 2
+#set1 = set(m3)
+#set2 = set(m2)
+#list3 = list(set1.difference(set2))
 
-if not list3:
-    print(*h)
-elif not h:
-    print(*list3)
+#if not list3:
+#    print(*h)
+#elif not h:
+#    print(*list3)
 
-n = int(input())
-sum = (1 + n) / 2 * n
-print(sum)
+#n = int(input())
+#sum = (1 + n) / 2 * n
+#print(sum)
+
+'''Ввести натуральное число N и вывести все натуральные числа, не
+превосходящие N и делящиеся на каждую из своих цифр.'''
+
+# n = int(input())
+# for i in range(1,n+1,1):
+#     print(i, end=" ")
+
+'''Дано натуральное число. Требуется посчитать количество четных и нечетных
+цифр в числе.'''
+
+# n = int(input())
+# even=odd=0
+# while n>0:
+#     if n%2 == 0:
+#         even += 1
+#     else:
+#         odd += 1
+#     n = n//10
+# print("%d %d" % (even, odd))
+
+'''Ввести натуральное число и определить, верно ли, что в его записи есть две
+одинаковые цифры (не обязательно стоящие рядом).'''
+
+# a = input()
+# if len(a) == len(set(a)):
+#     print("NO")
+# else:
+#     print("YES")
