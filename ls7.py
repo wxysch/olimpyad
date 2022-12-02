@@ -26,9 +26,9 @@
 гиперпростое, так, как и оно само, и числа 73 и 7 – простые. Напишите программу, которая
 определяет, верно ли, что переданное ей число – гиперпростое'''
 
-x = int(input())
-deliteli = 0
-for i in range(1,x):
-    if x%2 == 0:
-        deliteli +=1
-print(deliteli)
+# x = int(input())
+# deliteli = 0
+# for i in range(1,x):
+#     if x%2 == 0:
+#         deliteli +=1
+# print(deliteli)
