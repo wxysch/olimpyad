@@ -44,30 +44,55 @@
 счисления — 357, а ответ на задачу равен 3 × 5 × 7 − (3 + 5 + 7) = 90.
 '''
 
-# a,b = map(int,input().split())
-# def per(a,b):
-#     res = a%b
-#     a = a//b
-#     mn = 10
-#     while a>0:
-#         res = res+((a%b)*mn)
-#         mn*=10
-#         a=a//b
-#     return res 
-# def otvet(a):
-#     s=0
-#     p=1
-#     while a>0:
-#         x=a%10
-#         a = a//10
-#         s+=x
-#         p*=x
-#     return p-s
-# print(otvet(per(a,b)))
+a,b = map(int,input().split())
+def per(a,b):
+    res = a%b
+    a = a//b
+    mn = 10
+    while a>0:
+        res = res+((a%b)*mn)
+        mn*=10
+        a=a//b
+    return res 
+def otvet(a):
+    s=0
+    p=1
+    while a>0:
+        x=a%10
+        a = a//10
+        s+=x
+        p*=x
+    return p-s
+print(otvet(per(a,b)))
 
 '''
 Необходимо вычислить значение 2n.
 '''
 
-n = int(input())
-print(2**n)
+# n = int(input())
+# print(2**n)
+
+'''
+Задана последовательность, состоящая только из символов ‘>’, ‘<’ и ‘-‘. Требуется найти количество стрел, 
+которые спрятаны в этой последовательности. Стрелы – это подстроки вида ‘>>-->’ и ‘<--<<’.
+'''
+
+# import sys
+# try:
+#     a = input()
+# except EOFError:
+#     print(0)
+#     sys.exit()
+# res = 0
+# for i in range(4,len(a)):
+#     if (a[i-4:i+1]) == '>>-->' or a[i-4:i+1] == '<--<<':
+#         res +=1
+# print(res)
+
+'''
+Требуется найти разность между неотрицательными числами А и В.
+'''
+
+# a = int(input())
+# b = int(input())
+# print(a-b)
