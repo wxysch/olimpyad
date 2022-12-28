@@ -19,7 +19,7 @@
 #                 ss = chr(x+i)+str(y+j)
 #                 a.append(ss)
 #     if s0 in a:
-#         print('YES')
+#         print('YES')  
 #     else:
 #         print('NO')
 # else:
